@@ -1,0 +1,4 @@
+trip_id,trip_name,party_type,travelers,people,home,cities,start_date,days,budget_usd,local_currency,split_stays,split_transport,split_food,split_experiences,split_other
+swiss_family,Swiss Alps week,family,3,Priya;Raj;Maya,Dallas (DFW),Zurich;Lucerne;Interlaken;Zermatt,2026-09-12,7,6000,CHF,40,20,20,15,5
+athens_group,Athens with friends,group,4,Anika;Ben;Carlos;Divya,New York (JFK),Athens,2026-09-18,5,4800,EUR,40,15,25,15,5
+lisbon_solo,Lisbon solo,solo,1,Alex,Chicago (ORD),Lisbon,2026-08-22,4,1400,EUR,45,10,25,15,5

@@ -1,0 +1,25 @@
+trip_id,day,date,city,item,category,amount,currency,rate_to_usd,amount_usd,paid_by,split_between,source
+lisbon_solo,1,2026-08-22,Lisbon,"Guesthouse in Alfama, 1 night",stays,125.00,EUR,1.08,135.00,Alex,,synthetic
+lisbon_solo,1,2026-08-22,Lisbon,Pastel de nata and coffee,food,5.50,EUR,1.08,5.94,Alex,,synthetic
+lisbon_solo,1,2026-08-22,Lisbon,Lunch,food,21.50,EUR,1.08,23.22,Alex,,synthetic
+lisbon_solo,1,2026-08-22,Lisbon,Dinner,food,40.50,EUR,1.08,43.74,Alex,,synthetic
+lisbon_solo,1,2026-08-22,Lisbon,Tram 28 and metro,transport,11.00,EUR,1.08,11.88,Alex,,synthetic
+lisbon_solo,2,2026-08-23,Lisbon,"Guesthouse in Alfama, 1 night",stays,100.00,EUR,1.08,108.00,Alex,,synthetic
+lisbon_solo,2,2026-08-23,Lisbon,Pastel de nata and coffee,food,4.50,EUR,1.08,4.86,Alex,,synthetic
+lisbon_solo,2,2026-08-23,Lisbon,Lunch,food,14.00,EUR,1.08,15.12,Alex,,synthetic
+lisbon_solo,2,2026-08-23,Lisbon,Dinner,food,29.00,EUR,1.08,31.32,Alex,,synthetic
+lisbon_solo,2,2026-08-23,Lisbon,Tram 28 and metro,transport,6.50,EUR,1.08,7.02,Alex,,synthetic
+lisbon_solo,2,2026-08-23,Lisbon,Jeronimos Monastery,experiences,18.00,EUR,1.08,19.44,Alex,,synthetic
+lisbon_solo,2,2026-08-23,Lisbon,Belem Tower,experiences,10.00,EUR,1.08,10.80,Alex,,synthetic
+lisbon_solo,3,2026-08-24,Lisbon,"Guesthouse in Alfama, 1 night",stays,106.50,EUR,1.08,115.02,Alex,,synthetic
+lisbon_solo,3,2026-08-24,Lisbon,Pastel de nata and coffee,food,6.00,EUR,1.08,6.48,Alex,,synthetic
+lisbon_solo,3,2026-08-24,Lisbon,Lunch,food,14.50,EUR,1.08,15.66,Alex,,synthetic
+lisbon_solo,3,2026-08-24,Lisbon,Dinner,food,37.00,EUR,1.08,39.96,Alex,,synthetic
+lisbon_solo,3,2026-08-24,Lisbon,Tram 28 and metro,transport,8.50,EUR,1.08,9.18,Alex,,synthetic
+lisbon_solo,3,2026-08-24,Lisbon,Sintra day trip,experiences,49.50,EUR,1.08,53.46,Alex,,synthetic
+lisbon_solo,3,2026-08-24,Lisbon,Ceramic tiles souvenir,other,23.50,EUR,1.08,25.38,Alex,,synthetic
+lisbon_solo,4,2026-08-25,Lisbon,Pastel de nata and coffee,food,4.50,EUR,1.08,4.86,Alex,,synthetic
+lisbon_solo,4,2026-08-25,Lisbon,Lunch,food,21.50,EUR,1.08,23.22,Alex,,synthetic
+lisbon_solo,4,2026-08-25,Lisbon,Dinner,food,42.00,EUR,1.08,45.36,Alex,,synthetic
+lisbon_solo,4,2026-08-25,Lisbon,Tram 28 and metro,transport,9.50,EUR,1.08,10.26,Alex,,synthetic
+lisbon_solo,4,2026-08-25,Lisbon,Fado show,experiences,49.50,EUR,1.08,53.46,Alex,,synthetic

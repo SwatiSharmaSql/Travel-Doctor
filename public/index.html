@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Travel Doctor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,700;112,900;100,500;100,700&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 48 48">
+        <!-- Travel Doctor mark: a stethoscope whose tube becomes a plane's flight path -->
+        <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round">
+          <path d="M9 7v8.5a7.5 7.5 0 0 0 15 0V7"/>
+          <path d="M16.5 23v4.5c0 7 4.5 11 11.5 11"/>
+          <path d="M38.8 33c3.2-3.6 3.4-8 1-11.5" stroke-dasharray="1.6 3.6" stroke-width="2.2"/>
+        </g>
+        <circle cx="9" cy="6.5" r="2.4" fill="#fff"/><circle cx="24" cy="6.5" r="2.4" fill="#fff"/>
+        <circle cx="33" cy="38.5" r="6.2" fill="#fff"/>
+        <path d="M31.6 34.8h2.8v2.3h2.3v2.8h-2.3v2.3h-2.8v-2.3h-2.3v-2.8h2.3Z" fill="var(--red)"/>
+        <g transform="translate(25 2.5) scale(.86) rotate(45 12 12)" fill="#fff"><path d="M12 1.5c1 0 1.8 1.2 1.8 3v5.2l8 4.6v2.2l-8-2.4v4.6l2.6 2v1.8L12 21.4 7.6 22.5v-1.8l2.6-2v-4.6l-8 2.4v-2.2l8-4.6V4.5c0-1.8.8-3 1.8-3Z"/></g>
+      </svg></div>
+      <div><b>Travel Doctor</b><small>Travel within your budget, with Anna by your side</small></div>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button class="tab" role="tab" id="tab-trip" type="button" data-ico="compass"><span>Plan</span></button>
+      <button class="tab" role="tab" id="tab-picks" type="button" data-ico="star"><span>Top picks</span></button>
+      <button class="tab" role="tab" id="tab-anna" type="button" data-ico="chat"><span>Anna</span></button>
+      <button class="tab" role="tab" id="tab-dash" type="button" data-ico="chart"><span>Dashboard</span></button>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero" aria-label="Your trip"></section>
+  <div id="banner" class="banner" hidden></div>
+
+  <!-- PLAN -->
+  <section id="view-trip" class="stack">
+    <div class="grid2">
+      <div class="panel">
+        <div class="head"><h2 id="trip-title">Plan your trip</h2><span class="sub">Anna keeps the math</span></div>
+        <form id="trip-form" class="stack" novalidate>
+          <div class="step">
+            <div class="step-h"><span class="step-n">1</span><h3>Who's traveling?</h3></div>
+            <div class="seg" role="radiogroup" aria-label="Traveler type" id="seg"></div>
+            <div class="counts" id="counts"></div>
+            <p class="sub" id="party-hint"></p>
+            <div class="members" id="members"></div>
+          </div>
+          <div class="step">
+            <div class="step-h"><span class="step-n">2</span><h3>Where and when</h3></div>
+            <div class="form">
+              <div class="field full"><label for="f-name">Trip name</label><input id="f-name" placeholder="Swiss Alps week"></div>
+              <div class="field full"><label for="f-cities">Destination cities, in order</label><input id="f-cities" placeholder="Zurich, Lucerne, Interlaken, Zermatt"></div>
+              <div class="field full"><div class="cta" id="picks-cta" hidden></div></div>
+              <div class="field"><label for="f-start">Departure</label><input id="f-start" type="date"></div>
+              <div class="field"><label for="f-end">Return</label><input id="f-end" type="date"></div>
+              <div class="field full"><label for="f-home">Home city or airport</label><select id="f-home"></select><input id="f-home-other" placeholder="Type your city or airport" hidden></div>
+              <div class="field full"><div class="route" id="route"></div></div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-h"><span class="step-n">3</span><h3>Budget</h3></div>
+            <div class="subtabs" role="tablist" aria-label="Budget sections">
+              <button type="button" class="subtab" role="tab" id="st-budget" aria-selected="true">Trip budget</button>
+              <button type="button" class="subtab" role="tab" id="st-flights" aria-selected="false">Flights and airfare</button>
+            </div>
+            <div id="pane-budget" class="stack" style="gap:12px">
+            <div class="form">
+              <div class="field"><label for="f-budget">Total budget</label><input id="f-budget" type="number" min="1" step="1" placeholder="5000"></div>
+              <div class="field"><label for="f-cur">Budget currency</label><select id="f-cur"><option>USD</option><option>EUR</option><option>GBP</option><option>INR</option><option>CHF</option><option>CAD</option><option>AUD</option></select></div>
+              <div class="field"><label for="f-local">Local currency</label><select id="f-local"><option>CHF</option><option>EUR</option><option>GBP</option><option>USD</option><option>INR</option><option>JPY</option><option>THB</option><option>AED</option></select></div>
+              <div class="field"><label for="f-rate" id="f-rate-label">1 CHF in USD</label><input id="f-rate" type="number" step="0.0001" min="0" value="1.13"></div>
+            </div>
+            <div class="rx">
+              <div class="rx-head"><b>℞ Budget prescription</b><span id="rx-total" class="total-ok">100%</span></div>
+              <div id="rx-rows"></div>
+              <p class="sub" id="per-person"></p>
+            </div>
+            </div>
+            <div id="pane-flights" class="stack" style="gap:12px" hidden>
+              <div class="seg seg2" role="radiogroup" aria-label="Are flights in your budget?">
+                <label class="seg-opt"><input type="radio" name="finc" value="yes" id="finc-yes"><span><b>My budget includes flights</b><small>We take the airfare out first, then plan the rest</small></span></label>
+                <label class="seg-opt"><input type="radio" name="finc" value="no" id="finc-no" checked><span><b>Flights are separate</b><small>Your budget is for the trip itself; we show the all in total</small></span></label>
+              </div>
+              <div class="flight">
+                <div class="flight-h">✈ Going</div>
+                <div class="form">
+                  <div class="field"><label for="f-out-from">From</label><input id="f-out-from" list="airport-list" placeholder="Dallas (DFW)"></div>
+                  <div class="field"><label for="f-out-to">To</label><input id="f-out-to" list="airport-list" placeholder="Zurich (ZRH)"></div>
+                  <div class="field"><label for="f-out-airline">Airline</label><input id="f-out-airline" list="airline-list" placeholder="SWISS"></div>
+                  <div class="field"><label for="f-out-no">Flight number</label><input id="f-out-no" placeholder="Optional"></div>
+                  <div class="field"><label for="f-out-date">Date</label><input id="f-out-date" type="date"></div>
+                  <div class="field"><label for="f-out-dep">Departs</label><input id="f-out-dep" type="time"></div>
+                  <div class="field"><label for="f-out-arr">Arrives</label><input id="f-out-arr" type="time"></div>
+                  <div class="field"><label class="check" style="margin-top:26px"><input id="f-out-next" type="checkbox"> Arrives next day</label></div>
+                </div>
+              </div>
+              <div class="flight">
+                <div class="flight-h">✈ Coming home</div>
+                <div class="form">
+                  <div class="field"><label for="f-ret-from">From</label><input id="f-ret-from" list="airport-list" placeholder="Zurich (ZRH)"></div>
+                  <div class="field"><label for="f-ret-to">To</label><input id="f-ret-to" list="airport-list" placeholder="Dallas (DFW)"></div>
+                  <div class="field"><label for="f-ret-airline">Airline</label><input id="f-ret-airline" list="airline-list" placeholder="SWISS"></div>
+                  <div class="field"><label for="f-ret-no">Flight number</label><input id="f-ret-no" placeholder="Optional"></div>
+                  <div class="field"><label for="f-ret-date">Date</label><input id="f-ret-date" type="date"></div>
+                  <div class="field"><label for="f-ret-dep">Departs</label><input id="f-ret-dep" type="time"></div>
+                  <div class="field"><label for="f-ret-arr">Arrives</label><input id="f-ret-arr" type="time"></div>
+                  <div class="field"><label class="check" style="margin-top:26px"><input id="f-ret-next" type="checkbox"> Arrives next day</label></div>
+                </div>
+              </div>
+              <div class="form">
+                <div class="field"><label for="f-fl-price">Airfare</label><input id="f-fl-price" type="number" min="0" step="1" placeholder="1150"></div>
+                <div class="field"><label for="f-fl-mode">Price is</label><select id="f-fl-mode"><option value="per_person">Per person, round trip</option><option value="total">Total for everyone</option></select></div>
+                <div class="field"><label for="f-fl-cur">Currency</label><select id="f-fl-cur"><option>USD</option><option>EUR</option><option>GBP</option><option>INR</option><option>CHF</option><option>CAD</option><option>AUD</option></select></div>
+              </div>
+              <div class="fl-sum" id="fl-sum"></div>
+              <datalist id="airport-list"></datalist>
+              <datalist id="airline-list"><option value="SWISS"><option value="American Airlines"><option value="United"><option value="Delta"><option value="Lufthansa"><option value="British Airways"><option value="Air France"><option value="KLM"><option value="Emirates"><option value="Qatar Airways"><option value="Turkish Airlines"><option value="Air India"><option value="Aegean"><option value="Air Canada"></datalist>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-h"><span class="step-n">4</span><h3>Stay connected</h3></div>
+            <label class="check"><input id="f-optin" type="checkbox"> Everyone listed agrees to receive trip messages from Anna on WhatsApp</label>
+            <label class="check"><input id="f-group" type="checkbox"> <span>Create a WhatsApp group with Anna for this trip <span class="pill info">Demo</span></span></label>
+          </div>
+          <p class="err" id="form-err" hidden></p>
+          <div class="btns">
+            <button class="btn primary" type="submit" id="save-trip">Save trip</button>
+            <button class="btn" type="button" id="load-sample">Load sample family trip</button>
+            <button class="btn" type="button" id="load-sample-group">Load sample group trip</button>
+            <button class="btn danger" type="button" id="reset-trip" hidden>Delete trip</button>
+          </div>
+          <div id="confirm-row" class="banner" hidden><span>Delete this trip and all its expenses? This can't be undone.</span>
+            <span class="btns"><button class="btn small danger" type="button" id="confirm-del">Yes, delete</button><button class="btn small" type="button" id="cancel-del">Keep it</button></span></div>
+        </form>
+      </div>
+      <div class="stack">
+        <div class="panel">
+          <div class="head"><h2>WhatsApp group</h2><span class="stamp">DEMO MODE</span></div>
+          <div id="group-body" class="stack" style="gap:12px"></div>
+        </div>
+        <div class="panel">
+          <div class="head"><h2>Anna's messages</h2></div>
+          <p class="sub">What Anna sends during the trip. These become the WhatsApp templates Meta approves.</p>
+          <div id="wa-preview"></div>
+          <p class="sub" id="trip-math"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="plan-panel">
+      <div class="head"><h2>Plan your days</h2><span id="plan-cost"></span></div>
+      <p class="sub">The top 5 things to do in each city on your trip. Add the ones you love to a day, and the code checks the cost for your whole party against your experiences budget.</p>
+      <div class="city-tabs" id="city-tabs"></div>
+      <div class="plan-grid">
+        <div class="cards" id="attractions"></div>
+        <div class="stack">
+          <div class="map-card" id="map"></div>
+          <div><h3>Your itinerary</h3><div class="timeline" id="itinerary"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP PICKS -->
+  <section id="view-picks" class="stack" hidden><div id="picks" class="stack"></div></section>
+
+  <!-- ANNA -->
+  <section id="view-anna" class="grid2" hidden>
+    <div class="panel">
+      <div class="anna-card"><div class="anna-av" aria-hidden="true" id="anna-av"></div><div><h2>Talk to Anna</h2><p class="sub">Type expenses the way you'd say them. Anna understands the words, and code does every calculation.</p></div></div>
+      <div class="chatbox" id="chat" aria-live="polite"></div>
+      <div class="chips" id="chips"></div>
+      <div class="sender" id="sender-row" hidden><label for="sender">Sending as</label><select id="sender"></select><span>Group trip: Anna records who paid, like each friend texting the group.</span></div>
+      <form class="composer" id="composer">
+        <label for="msg" hidden>Message Anna</label>
+        <textarea id="msg" placeholder="Train to Jungfraujoch was 210 francs, lunch 45"></textarea>
+        <button class="btn primary" type="submit" id="send">Send</button>
+        <button class="btn" type="button" id="stop" hidden>Stop</button>
+      </form>
+    </div>
+    <div class="panel">
+      <h2>Behind the scenes</h2>
+      <p class="sub">Every tool Anna uses shows up here: what she asked the code to do, and what the code answered. Think, act, observe, repeat.</p>
+      <div class="log" id="log"></div>
+    </div>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section id="view-dash" hidden><div id="dash"></div></section>
+</div>
+<script src="js/runtime.js"></script>
+<script src="js/art.js"></script>
+<script src="js/places.js"></script>
+<script src="js/attractions-data.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/picks.js"></script>
+<script src="js/route.js"></script>
+<script src="js/flights.js"></script>
+<script src="js/split.js"></script>
+<script src="js/dataset.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

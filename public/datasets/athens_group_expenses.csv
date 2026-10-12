@@ -1,0 +1,30 @@
+trip_id,day,date,city,item,category,amount,currency,rate_to_usd,amount_usd,paid_by,split_between,source
+athens_group,1,2026-09-18,Athens,"Apartment in Plaka, 4 nights",stays,706.50,EUR,1.08,763.02,Anika,,synthetic
+athens_group,1,2026-09-18,Athens,Taxi from the airport,transport,53.50,EUR,1.08,57.78,Ben,,synthetic
+athens_group,1,2026-09-18,Athens,Coffee and pastries,food,22.00,EUR,1.08,23.76,Divya,,synthetic
+athens_group,1,2026-09-18,Athens,Souvlaki lunch,food,42.00,EUR,1.08,45.36,Divya,,synthetic
+athens_group,1,2026-09-18,Athens,Dinner at a taverna,food,186.00,EUR,1.08,200.88,Anika,,synthetic
+athens_group,1,2026-09-18,Athens,"Acropolis tickets, 4 people",experiences,120.00,EUR,1.08,129.60,Anika,,synthetic
+athens_group,1,2026-09-18,Athens,Gift shop,other,43.50,EUR,1.08,46.98,Divya,Divya,synthetic
+athens_group,2,2026-09-19,Athens,Coffee and pastries,food,13.50,EUR,1.08,14.58,Ben,,synthetic
+athens_group,2,2026-09-19,Athens,Taverna lunch,food,55.00,EUR,1.08,59.40,Anika,,synthetic
+athens_group,2,2026-09-19,Athens,Dinner at a taverna,food,153.00,EUR,1.08,165.24,Carlos,,synthetic
+athens_group,2,2026-09-19,Athens,"Acropolis Museum, 4 people",experiences,80.00,EUR,1.08,86.40,Anika,,synthetic
+athens_group,3,2026-09-20,Athens,Coffee and pastries,food,17.00,EUR,1.08,18.36,Anika,,synthetic
+athens_group,3,2026-09-20,Athens,Souvlaki lunch,food,42.00,EUR,1.08,45.36,Anika,,synthetic
+athens_group,3,2026-09-20,Athens,Dinner at a taverna,food,154.50,EUR,1.08,166.86,Ben,,synthetic
+athens_group,3,2026-09-20,Athens,"Day cruise to the islands, 4 people",experiences,320.50,EUR,1.08,346.14,Carlos,,synthetic
+athens_group,3,2026-09-20,Athens,Metro tickets,transport,8.50,EUR,1.08,9.18,Anika,,synthetic
+athens_group,3,2026-09-20,Athens,Rooftop drinks,food,50.00,EUR,1.08,54.00,Ben,Ben;Divya,synthetic
+athens_group,3,2026-09-20,Athens,Gift shop,other,36.50,EUR,1.08,39.42,Ben,Ben,synthetic
+athens_group,4,2026-09-21,Athens,Coffee and pastries,food,21.00,EUR,1.08,22.68,Ben,,synthetic
+athens_group,4,2026-09-21,Athens,Souvlaki lunch,food,67.50,EUR,1.08,72.90,Divya,,synthetic
+athens_group,4,2026-09-21,Athens,Dinner at a taverna,food,125.00,EUR,1.08,135.00,Anika,,synthetic
+athens_group,4,2026-09-21,Athens,"Ancient Agora, 4 people",experiences,80.00,EUR,1.08,86.40,Ben,,synthetic
+athens_group,4,2026-09-21,Athens,Metro tickets,transport,14.00,EUR,1.08,15.12,Carlos,,synthetic
+athens_group,4,2026-09-21,Athens,Gift shop,other,37.00,EUR,1.08,39.96,Divya,Divya,synthetic
+athens_group,5,2026-09-22,Athens,Coffee and pastries,food,20.00,EUR,1.08,21.60,Anika,,synthetic
+athens_group,5,2026-09-22,Athens,Souvlaki lunch,food,46.50,EUR,1.08,50.22,Ben,,synthetic
+athens_group,5,2026-09-22,Athens,Dinner at a taverna,food,144.00,EUR,1.08,155.52,Anika,,synthetic
+athens_group,5,2026-09-22,Athens,Metro tickets,transport,15.50,EUR,1.08,16.74,Ben,,synthetic
+athens_group,5,2026-09-22,Athens,Taxi to the airport,transport,50.50,EUR,1.08,54.54,Carlos,,synthetic

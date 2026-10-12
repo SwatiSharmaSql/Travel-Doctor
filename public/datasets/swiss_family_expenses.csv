@@ -1,0 +1,45 @@
+trip_id,day,date,city,item,category,amount,currency,rate_to_usd,amount_usd,paid_by,split_between,source
+swiss_family,1,2026-09-12,Zurich,"Hotel in Zurich, 2 nights",stays,378.00,CHF,1.13,427.14,Priya,,synthetic
+swiss_family,1,2026-09-12,Zurich,Airport train to Zurich HB,transport,44.00,CHF,1.13,49.72,Priya,,synthetic
+swiss_family,1,2026-09-12,Zurich,Breakfast,food,32.50,CHF,1.13,36.72,Priya,,synthetic
+swiss_family,1,2026-09-12,Zurich,Lunch,food,82.00,CHF,1.13,92.66,Priya,,synthetic
+swiss_family,1,2026-09-12,Zurich,Dinner,food,152.00,CHF,1.13,171.76,Priya,,synthetic
+swiss_family,1,2026-09-12,Zurich,Hot chocolate and pastries,food,13.00,CHF,1.13,14.69,Priya,,synthetic
+swiss_family,2,2026-09-13,Zurich,Breakfast,food,37.00,CHF,1.13,41.81,Raj,,synthetic
+swiss_family,2,2026-09-13,Zurich,Lunch,food,87.50,CHF,1.13,98.87,Priya,,synthetic
+swiss_family,2,2026-09-13,Zurich,Dinner,food,165.50,CHF,1.13,187.01,Priya,,synthetic
+swiss_family,2,2026-09-13,Zurich,Tram and bus tickets,transport,12.00,CHF,1.13,13.56,Raj,,synthetic
+swiss_family,2,2026-09-13,Zurich,"Kunsthaus museum, 3 tickets",experiences,50.50,CHF,1.13,57.06,Raj,,synthetic
+swiss_family,3,2026-09-14,Lucerne,"Hotel in Lucerne, 2 nights",stays,468.00,CHF,1.13,528.84,Raj,,synthetic
+swiss_family,3,2026-09-14,Lucerne,Train to Lucerne,transport,110.00,CHF,1.13,124.30,Raj,,synthetic
+swiss_family,3,2026-09-14,Lucerne,Breakfast,food,29.50,CHF,1.13,33.33,Raj,,synthetic
+swiss_family,3,2026-09-14,Lucerne,Lunch,food,88.00,CHF,1.13,99.44,Raj,,synthetic
+swiss_family,3,2026-09-14,Lucerne,Dinner,food,151.00,CHF,1.13,170.63,Priya,,synthetic
+swiss_family,3,2026-09-14,Lucerne,Hot chocolate and pastries,food,22.00,CHF,1.13,24.86,Priya,,synthetic
+swiss_family,3,2026-09-14,Lucerne,Lake Lucerne cruise,experiences,94.50,CHF,1.13,106.78,Raj,,synthetic
+swiss_family,3,2026-09-14,Lucerne,Swiss chocolate gifts,other,24.50,CHF,1.13,27.68,Raj,,synthetic
+swiss_family,4,2026-09-15,Lucerne,Breakfast,food,42.00,CHF,1.13,47.46,Priya,,synthetic
+swiss_family,4,2026-09-15,Lucerne,Lunch,food,79.50,CHF,1.13,89.83,Priya,,synthetic
+swiss_family,4,2026-09-15,Lucerne,Dinner,food,147.50,CHF,1.13,166.67,Priya,,synthetic
+swiss_family,4,2026-09-15,Lucerne,Snacks,food,13.50,CHF,1.13,15.25,Priya,,synthetic
+swiss_family,4,2026-09-15,Lucerne,Souvenirs,other,51.00,CHF,1.13,57.63,Raj,,synthetic
+swiss_family,5,2026-09-16,Interlaken,"Hotel in Interlaken, 1 night",stays,240.50,CHF,1.13,271.76,Priya,,synthetic
+swiss_family,5,2026-09-16,Interlaken,Train to Interlaken,transport,134.50,CHF,1.13,151.98,Raj,,synthetic
+swiss_family,5,2026-09-16,Interlaken,Breakfast,food,32.50,CHF,1.13,36.72,Raj,,synthetic
+swiss_family,5,2026-09-16,Interlaken,Lunch,food,71.00,CHF,1.13,80.23,Raj,,synthetic
+swiss_family,5,2026-09-16,Interlaken,Dinner,food,116.50,CHF,1.13,131.64,Priya,,synthetic
+swiss_family,5,2026-09-16,Interlaken,Ice cream,food,18.00,CHF,1.13,20.34,Raj,,synthetic
+swiss_family,5,2026-09-16,Interlaken,"Harder Kulm funicular, 3 people",experiences,113.50,CHF,1.13,128.25,Priya,,synthetic
+swiss_family,5,2026-09-16,Interlaken,"Paragliding, 1 person",experiences,172.00,CHF,1.13,194.36,Priya,,synthetic
+swiss_family,6,2026-09-17,Zermatt,"Hotel in Zermatt, 1 night",stays,306.00,CHF,1.13,345.78,Priya,,synthetic
+swiss_family,6,2026-09-17,Zermatt,Train to Zermatt,transport,126.50,CHF,1.13,142.94,Raj,,synthetic
+swiss_family,6,2026-09-17,Zermatt,Breakfast,food,40.00,CHF,1.13,45.20,Raj,,synthetic
+swiss_family,6,2026-09-17,Zermatt,Lunch,food,70.50,CHF,1.13,79.66,Raj,,synthetic
+swiss_family,6,2026-09-17,Zermatt,Dinner,food,147.50,CHF,1.13,166.67,Priya,,synthetic
+swiss_family,6,2026-09-17,Zermatt,Tram and bus tickets,transport,22.50,CHF,1.13,25.42,Raj,,synthetic
+swiss_family,7,2026-09-18,Zermatt,Train back to Zurich airport,transport,161.50,CHF,1.13,182.49,Priya,,synthetic
+swiss_family,7,2026-09-18,Zurich,Breakfast,food,37.00,CHF,1.13,41.81,Raj,,synthetic
+swiss_family,7,2026-09-18,Zurich,Lunch,food,94.00,CHF,1.13,106.22,Priya,,synthetic
+swiss_family,7,2026-09-18,Zurich,Dinner,food,145.50,CHF,1.13,164.41,Priya,,synthetic
+swiss_family,7,2026-09-18,Zurich,Tram and bus tickets,transport,19.00,CHF,1.13,21.47,Priya,,synthetic
+swiss_family,7,2026-09-18,Zurich,"Kunsthaus museum, 3 tickets",experiences,52.50,CHF,1.13,59.32,Priya,,synthetic
